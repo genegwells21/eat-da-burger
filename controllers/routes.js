@@ -1,4 +1,4 @@
-var express = router('express');
+var express = require('express');
 var router = express.Router();
 // this is a setting up our path with a get function
 router.get('/', function(req, res)  {
