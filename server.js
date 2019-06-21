@@ -18,6 +18,10 @@ app.engine('handlebars', exhbs({
 }));
 // we are setting our handlebars
 app.set('view engine', 'handlebars');
+// these are referencing out routes with require and a use method with a back slash
+var routes = require('./controllers/routes.js');
+
+app.use('/', routes);
 // this is setting our port
 var PORT = 3000;
 app.listen(PORT)
