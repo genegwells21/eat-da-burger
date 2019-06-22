@@ -16,6 +16,14 @@ var orm =   {
         cb(result);
 
 })
+},
+// this create funciton is creating a table and putting values into them and refers to our call back
+create: function(tableInput, val, cb)   {
+    connection.query('INSERT INTO '+tableInput+" (burger_name)
+    VALUES ('"+val+"');", function(err, result)   {
+        if(err) throw err;
+        cb(results);
+    })
 }
 }
 module.exports = orm;
