@@ -24,5 +24,5 @@ var routes = require('./controllers/routes.js');
 
 app.use('/', routes);
 // this is setting our port
-var PORT = 3306;
+var PORT = 8889;
 app.listen(PORT)
