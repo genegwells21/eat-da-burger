@@ -19,11 +19,11 @@ var orm =   {
 },
 // this create funciton is creating a table and putting values into them and refers to our call back
 create: function(tableInput, val, cb)   {
-    connection.query('INSERT INTO '+tableInput+" (burger_name)
-    VALUES ('"+val+"');", function(err, result)   {
-        if(err) throw err;
+    connection.query('INSERT INTO '+tableInput+" (burger_name) VALUES ('"+val+"');", function(err, result){
+        if(err)throw err;
         cb(results);
     })
 }
 }
+// this is exporting our orm.js file to make it accessible to other files
 module.exports = orm;
