@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 // this is our connection to mysql with a createConnection method as well as our connection information
 var connection = mysql.createConnection({
-    host:'localhost',
+    host:'local connection',
     user:'root',
-    password:'root',
+    password:'',
     database:'burgers_db'
 });
 // this is our connect method with a function
